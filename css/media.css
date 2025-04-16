@@ -273,6 +273,8 @@
     body {
         background-size: 125%;
         background-repeat: repeat;
+        background-color: rgba(0, 0, 0, 0.6);
+        background-blend-mode: darken;
     }
 
     .main {
