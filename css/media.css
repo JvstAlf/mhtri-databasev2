@@ -266,7 +266,13 @@
 
     .logo {
         height: 80%;
+        margin-top: 1rem;
         padding: 0;
+    }
+
+    body {
+        background-size: 125%;
+        background-repeat: repeat;
     }
 
     .main {
