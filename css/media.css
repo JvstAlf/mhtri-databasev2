@@ -262,33 +262,34 @@
     }
 }
 
-@media screen and (orientation: portrait), (max-width: 850px) {
+@media screen and (orientation: portrait) {
 
     .logo {
-        height: 250px;
+        height: 80%;
         padding: 0;
     }
 
     .main {
         padding: 2rem 0;
-        height: 40dvh;
+        height: 30dvh;
     }
 
     .title {
-        padding: 0;
+        padding: 1rem;
         font-size: 3rem;
-        padding: 0;
         height: 200px;
+        display: flex;
+        flex-direction: column;
     }
 
     .navbar li {
-        width: 250px;
-        height: 46px;
+        width: 225px;
+        height: 42px;
         font-size: 1rem;
     }
 
     .navbar {
-        height: 60dvh;
+        height: 70dvh;
     }
 
     .navbar ul {
@@ -299,19 +300,23 @@
         display: none;
     }
 
-    .description {
-        padding: 0;
-    background-size: cover;
-    border: 2rem solid transparent;
-    background-image: url('../images/hud/paper.png');
-    background-size: cover;
-    border-image: url('../images/hud/paperborder.png') 50 round;
-    background-origin: border-box;
-    background-clip: padding-box;
+    .body {
+        padding: 1.5rem;
     }
 
-    .description p{
-        font-size: 0.75rem;
+    .description {
+        padding: 0;
+        background-size: cover;
+        border: 2rem solid transparent;
+        background-image: url('../images/hud/paper.png');
+        background-size: cover;
+        border-image: url('../images/hud/paperborder.png') 50 round;
+        background-origin: border-box;
+        background-clip: padding-box;
+    }
+
+    .description p {
+        font-size: 0.7rem;
         word-spacing: 5px;
         line-height: 1.1rem;
     }
@@ -320,17 +325,39 @@
         display: none;
     }
 
+    iframe {
+        width: 85%;
+    }
+
+    .monster-icon {
+        width: 8rem;
+        height: 6.25rem;
+    }
+
+    .large-monster p {
+        font-size: 1rem;
+        text-shadow: 0 3px 3px black;
+    }
+
+    .large-monsters {
+        gap: 1rem;
+        padding: 0;
+    }
+
     .body1 {
         width: 100%;
-        padding: 0 0;
+        padding: 1rem;
     }
 
     .hamburger-menu {
         display: flex;
+        padding: 0.5rem;
     }
 
     .monster-name {
-        font-size: 4rem;
+        font-size: 3rem;
+        height: auto;
+        padding: 0;
     }
 
     .monster-info {
@@ -338,17 +365,18 @@
     }
 
     .monster-chart {
-        width: 80%;
+        width: 100%;
         justify-content: center;
-        padding: 1rem;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        border: 3rem solid transparent;
+        border: 2rem solid transparent;
         background-image: url('../images/hud/paper.png');
         border-image: url('../images/hud/paperborder.png') 50 round;
         background-size: contain;
         background-clip: padding-box;
+        background-origin: border-box;
         align-self: center;
     }
 
@@ -365,77 +393,214 @@
     }
 
     .monster-details > div {
-        padding: 1rem;
+        padding: 0.5rem;
         width: 100%;
     }
 
     .monster-details > div p:first-child, .monster-details > div p:last-child, .monster-details > div p {
-        font-size: 1rem;
+        font-size: 0.75rem;
         width: 100%;
-        padding: 0.25rem 1rem;
+        padding: 0.25rem;
+    }
+
+    .elements-efficiency {
+        border: 1rem solid transparent;
+        border-image: url('../images/hud/paperborder.png') 50 round;
+        background-size: cover;
+        background-clip: padding-box;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        border-spacing: 0;
+    }
+    
+    .elements-efficiency th {
+        padding: 0.25rem;
+        font-size: 0.75rem;
+    }
+
+    .element-icon {
+        width: 20px;
+    }
+
+    .damage-chart {
+        width: 100%;
+        object-fit: cover;
+        padding: 0;
+    }
+
+    .note {
+        display: none;
+    }
+
+    model-viewer {
+        height: 15rem;
+        padding: 0;
+        width: 100%;
+    }
+
+    .monster-desc3 p {
+        padding: 1rem;
+        font-size: 0.75rem;
     }
 
     .carves {
         display: flex;
         flex-direction: column;
         padding: 0;
+        width: 100%;
     }
     
     .carves table {
-        font-size: 0.75rem;
         display: flex;
         flex-direction: column;
         font-size: auto;
         padding: 0.5rem;
-        border: 1px solid transparent;
+        flex-wrap: wrap;
+        table-layout: fixed;
+        overflow: auto;
+        border-radius: 10px;
+        border: 1rem solid transparent;
+        border-image: url('../images/hud/paperborder.png') 50 round;
+        background-size: cover;
+        background-clip: padding-box;
+        border-spacing: 0;
+        background-origin: border-box;
     }
 
     .carves th {
         padding: 0rem;
-        font-size: auto;
+        font-size: 10px;
+        word-wrap: break-word;
     }
     
     .carves td {
         padding: 0rem;
-        font-size: auto;
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+
+    .monster-part {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
     }
     
-}
-
-@media screen and (max-width: 500px) {
-
-    .monster-icon {
-        width: 7rem;
-        height: 5.5rem;
+    .scroll {
+        display: flex;
+        font-family: 'MHTriBase' !important;
+        font-size: 0.75rem !important;
+        padding: 0.5rem;
+        width: 100%;
+        justify-content: center;
     }
 
-    .large-monster p {
-        font-size: 0.8em;
-        text-shadow: 0 0.1rem 0.1rem black;
-        -webkit-text-stroke: 0;
+    .weapons-page {
+        padding: 0;
+        border: 1.5rem solid transparent;
+        border-image: url('../images/hud/paperborder.png') 50 round;
+        background-origin: border-box;
+        background-clip: padding-box;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
 
-    .carves table {
+    .weapons-page p {
+        font-size: 0.8rem;
+        line-height: 14px;
+    }
+
+    b {
+        font-size: 100%;
+    }
+
+    .tree {
+        width: 100%;
+        padding: 0rem;
+        font-family: 'MHTriBase';
+        text-align: center;
+        border-collapse: collapse;
+        table-layout: fixed;
+        overflow: scroll;
+        flex-wrap: wrap;
+        table-layout: fixed;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tree-title {
+        padding: 1rem;
+        width: 90%;
+    }
+
+    .tree-title p {
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .path-name > span {
+        width: 200px;
+        height: 35px;
+        font-weight: 400;
+        font-size: 1rem;
+        color: white;
+        text-shadow: 0 0.25rem 0.15rem black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .path-name span span {
+        width: 100%;
+        margin: 0rem;
+        font-size: 0.5rem;
+        word-spacing: 5px;
+    }
+
+    .tree th {
+        padding: 0.2rem;
         font-size: 0.5rem;
     }
-}
 
-@media screen and (max-width: 380px) {
-
-    .navbar li {
-        width: 175px;
-        height: 33px;
-        font-size: 0.8rem;
+    .path-name {
+        font-size: 1rem;
+        width: 100%;
+        padding: 0.25rem;
     }
 
-    .logo {
-        height: 150px;
+    .tree td {
+        padding: 0.2rem;
+        font-size: 0.5rem;
     }
 
-    .title {
-        font-size: 2.5rem;
-        -webkit-text-stroke: 1px black;
-        padding: 0;
+    .tree tr td:first-child {
+        padding-left: 0rem;
+    }
+
+    .element {
+        height: 12px;
+        margin: 0 0.1rem;
+    }
+
+    .sharpness {
+        height: 0.5rem;
+    }
+
+    .weapon-name {
+        padding: 0.5rem;
+    }
+
+    .weapon-rarity {
+        width: 18px;
+        height: 18px;
+        vertical-align: middle;
+        margin-right: 0.2rem;
     }
 
 }

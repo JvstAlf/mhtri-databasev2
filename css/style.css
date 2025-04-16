@@ -218,6 +218,7 @@ a, a:link, a:visited {
     flex-wrap: wrap;
     gap: 2rem;
 }
+
 .large-monster {
     display: flex;
     flex-direction: column;
@@ -610,6 +611,10 @@ iframe {
     font-family: 'MHTriBase';
 }
 
+.scroll {
+    display: none;
+}
+
 .carves th {
     padding: 1rem;
     border-top: 2px solid black;
@@ -786,7 +791,8 @@ b > a:hover {
 }
 
 .hamburger-menu i {
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding: 0.5rem;
 }
 
 #menu {
