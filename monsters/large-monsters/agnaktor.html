@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="description" content="description">
+        <meta name="keywords" content="keywords">
+        <meta name="author" content="Alf">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../../css/media.css">
+        <title>Agnaktor | MHTri Database</title>
+        <link rel="icon" href="../../images/icon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <div class="body1">
+
+            <ul class="top-navbar">
+                <img src="../../images/icon.png" style="height: 100%; border-radius: 15px; border: 2px solid black;">
+                <a href="../../index.html"><li>HOME</li></a>
+                <a href="../../sources.html"><li>SOURCES</li></a>
+                <a href="../../about.html"><li>ABOUT</li></a>
+            </ul>
+
+            <div class="hamburger-menu">
+
+                <i class="fa fa-bars" onclick="menuOpen()"></i>
+                
+                <div id="menu">
+                <a href="../../index.html"><li>HOME</li></a>
+                <a href="../../sources.html"><li>SOURCES</li></a>
+                <a href="../../about.html"><li>ABOUT</li></a>
+                </div>
+                
+            </div>
+
+            <p class="monster-name">AGNAKTOR</p>
+
+            <div class="monster-info">
+
+                <div class="monster-desc">
+
+                    <br>
+
+                    <p class="monster-desc1">
+                        Agnaktor is a leviathan large monster. It looks similar to Lagiacrus and he is covered in lava that becomes harder when cooled. It uses his head as a drill to go underground.
+                    </p><br>
+
+                    <p class="monster-desc2">
+                        "Also known as fire-pike wyverns, Agnaktor use their tough beaks and great strength to burrow through rock, and sometimes even cave ceilings. Encrusted with hardened lava that can soften from the heat when they spit magma or burrow."
+                    </p><br>
+
+                    <p class="monster-desc1">
+                        Agnaktor appears in:
+                        <ul>
+                            <li class="quest-name">5★ Village quest <a href="../../village-quests/level-5/denizem-of-the-molten-deep.html" style="color: #ff7b00; -webkit-text-stroke: black 0.5px;">Denizem of the Molten Deep</a></li>
+                            <li class="quest-name">6★ Urgent Village quest <a href="../../village-quests/level-6/a-burnt-offering.html" style="color: #ff7b00; -webkit-text-stroke: black 0.5px;">A Burnt Offering</a></li>
+                            <li class="quest-name">3★ Low Rank Online quest <a href="../../online-quests/level-3/advanced-agnaktor-alert.html" style="color: #ff7b00; -webkit-text-stroke: black 0.5px;">[Advanced] Agnaktor Alert</a></li>
+                            <li class="quest-name">5★ High Rank Online quest <a href="../../online-quests/level-5/the-molten-monstrosity.html" style="color: #ff7b00; -webkit-text-stroke: black 0.5px;">The Molten Monstrosity</a> and <a href="../../online-quests/level-5/agnaktor-alert.html" style="color: #ff7b00; -webkit-text-stroke: black 0.5px;">Agnaktor Alert</a></li>
+                            <li class="quest-name">6★ High Rank Online quest <a href="../../online-quests/level-6/a-burnt-offering.html" style="color: #ff7b00; -webkit-text-stroke: black 0.5px;">A Burnt Offering</a></li>
+                        </ul>
+                    </p>
+
+                    <model-viewer src="../../3D-monsters/agnaktor.glb" alt="3D model of Agnaktor" shadow-intensity="1" camera-controls ar >
+                    </model-viewer>
+
+                    <p class="note">3d model viewer, click and hold to rotate, right click to move camera, scroll to zoom</p>
+
+                    <div class="monster-desc3">
+                        <p>Damage Efficiency Chart</p>
+                    </div>
+                    
+                    <img src="../../images/large-monsters/damage/agnaktor.png" alt="" class="damage-chart">
+
+                    <div class="monster-desc3">
+                        <p>Elements Efficiency (Armored)</p>
+                    </div>
+
+                    <table class="elements-efficiency">
+                        <tr>
+                            <th style="width: 20%; border-top-left-radius: 1rem;">Hitzone</th>
+                            <th style="width: 10%;"><img src="../../images/fire.png" class="element-icon"></th>
+                            <th style="width: 10%;"><img src="../../images/water.png" class="element-icon"></th>
+                            <th style="width: 10%;"><img src="../../images/thunder.png" class="element-icon"></th>
+                            <th style="width: 10%;"><img src="../../images/ice.png" class="element-icon"></th>
+                            <th style="width: 10%; border-top-right-radius: 1rem;"><img src="../../images/dragon.png" class="element-icon"></th>
+                        </tr>
+                        <tr>
+                            <th>Head</th>
+                            <td>0</td>
+                            <td>25</td>
+                            <td>20 (10)</td>
+                            <td>15</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Neck</th>
+                            <td>0</td>
+                            <td>15</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Chest</th>
+                            <td>0</td>
+                            <td>25</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <th>Body</th>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>15</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Front Legs</th>
+                            <td>0</td>
+                            <td>5</td>
+                            <td>0</td>
+                            <td>15</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Back Legs</th>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>0</td>
+                            <td>10</td>
+                            <td>5</td>
+                        </tr>
+                        <tr>
+                            <th>Fin</th>
+                            <td>0</td>
+                            <td>20</td>
+                            <td>5</td>
+                            <td>10</td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <th style="border-bottom-left-radius: 1rem;">Tail</th>
+                            <td>0</td>
+                            <td>15</td>
+                            <td>5</td>
+                            <td>20</td>
+                            <td style="border-bottom-right-radius: 1rem;">5</td>
+                        </tr>
+                    </table>
+
+                    <div class="monster-desc3">
+                        <p>Carves</p>
+                    </div>
+
+                    <div class="carves">
+
+                        <p>LOW RANK</p>
+
+                        <table>
+                            <tr>
+                                <th>Body Carves</th>
+                                <th>Capture Rewards</th>
+                                <th>Wound Rewards</th>
+                                <th>Shiny Drops</th>
+                                <th>Tail Carves</th>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Shell | 40%</td>
+                                <td><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide | 32%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Face</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/4red.webp" class="monster-part">Agnaktor Beak | 64%</p>
+                                        <p><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Shell | 31%</p>
+                                        <p><img src="../../images/monster-parts/bone.png" class="monster-part">Monster Bone L | 5%</p>
+                                    </div>
+                                </td>
+                                <td><img src="../../images/monster-parts/1cyan.png" class="monster-part">Wyvern Tear | 72%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Tail | 65%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide | 27%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin | 27%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Claws</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw | 54%</p>
+                                        <p><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 37%</p>
+                                        <p><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 9%</p>
+                                    </div>
+                                </td>
+                                <td><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 20%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin | 27%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 20%</td>
+                                <td><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 20%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Chest</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide | 58%</p>
+                                        <p><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 33%</p>
+                                        <p><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 9%</p>
+                                    </div>
+                                </td>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 8%</td>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 8%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw | 8%</td>
+                                <td><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw | 12%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Fin</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin | 50%</p>
+                                        <p><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide | 32%</p>
+                                        <p><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 18%</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 5%</td>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 8%</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                        <p>HIGH RANK</p>
+
+                        <table>
+                            <tr>
+                                <th>Body Carves</th>
+                                <th>Capture Rewards</th>
+                                <th>Wound Rewards</th>
+                                <th>Shiny Drops</th>
+                                <th>Tail Carves</th>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Carapace | 38%</td>
+                                <td><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide+ | 30%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Face</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Carapace | 52%</p>
+                                        <p><img src="../../images/monster-parts/4red.webp" class="monster-part">Agnaktor Beak | 42%</p>
+                                        <p><img src="../../images/monster-parts/7green.webp" class="monster-part">Wyvern Stone | 6%</p>
+                                    </div>
+                                </td>
+                                <td><img src="../../images/monster-parts/1cyan.png" class="monster-part">Wyvern Tear | 72%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Tail | 65%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide+ | 25%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin+ | 27%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Claws</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw+ | 51%</p>
+                                        <p><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 19%</p>
+                                        <p><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw | 18%</p>
+                                        <p><img src="../../images/monster-parts/6red.webp" class="monster-part">Firecell Stone | 12%</p>
+                                    </div>
+                                </td>
+                                <td><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 20%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin+ | 25%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 20%</td>
+                                <td><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 18%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Chest</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide+ | 46%</p>
+                                        <p><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 26%</p>
+                                        <p><img src="../../images/monster-parts/2red.webp" class="monster-part">Agnaktor Hide | 18%</p>
+                                        <p><img src="../../images/monster-parts/6red.webp" class="monster-part">Firecell Stone | 10%</p>
+                                    </div>
+                                </td>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 8%</td>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firecell Stone | 10%</td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw+ | 9%</td>
+                                <td><img src="../../images/monster-parts/3red.webp" class="monster-part">Agnaktor Claw+ | 12%</td>
+                                <td class="wounds">
+                                    <div>
+                                        <p>Fin</p>
+                                    </div>
+                                    <div>
+                                        <p><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin+ | 49%</p>
+                                        <p><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin | 32%</p>
+                                        <p><img src="../../images/monster-parts/5red.webp" class="monster-part">Agnaktor Scale | 15%</p>
+                                        <p><img src="../../images/monster-parts/7green.webp" class="monster-part">Wyvern Stone | 4%</p>
+                                    </div>
+                                </td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firecell Stone | 5%</td>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firecell Stone | 7%</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><img src="../../images/monster-parts/6red.webp" class="monster-part">Firestone | 3%</td>
+                                <td><img src="../../images/monster-parts/1red.webp" class="monster-part">Agnaktor Fin | 6%</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td><img src="../../images/monster-parts/7green.webp" class="monster-part">Wyvern Stone | 3%</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </table>
+
+                    </div>
+
+                </div>
+
+                <!--  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+
+                <div class="monster-chart">
+
+                    <img src="../../images/large-monsters/agnaktor.png" alt="agnaktor" class="monster-image">
+
+                    <div class="monster-details">
+                        <div>
+                            <p>Monster Class:</p>
+                            <p>Leviathan</p>
+                        </div>
+                        <div>
+                            <p>Elements:</p>
+                            <p><img src="../../images/fire.png">Fire</p>
+                        </div>
+                        <div>
+                            <p>Ailments:</p>
+                            <p><img src="../../images/fireblight.png">Fireblight</p>
+                        </div>
+                        <div>
+                            <p>Weak to:</p>
+                            <section>
+                            <p><img src="../../images/ice.png">Ice</p>
+                            <p><img src="../../images/water.png">Water</p>
+                            <p><img src="../../images/dragon.png"><abbr title="without magma">Dragon*</abbr></p>
+                            </section>
+                        </div>
+                        <div>
+                            <p>Habitat:</p>
+                            <p><a href="../../locations/volcano/index.html">Volcano</a></p>
+                        </div>
+                        <div>
+                            <p>Sizes:</p>
+                            <section>
+                                <div><img src="../../images/bigCrown.png" alt="big crown"><p>3421.64 cm</p></div>
+                                <div><img src="../../images/smallCrown.png" alt="small crown"><p>2416.1 cm</p></div>
+                            </section>
+                        </div>
+                        <div>
+                            <p>Icon:</p>
+                            <img src="../../images/large-monsters/icon/agnaktor.png" class="monster-icon-small">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <script src="../../js/script.js"></script>
+
+        <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+  </script>
+
+<!-- Loads <model-viewer> for old browsers like IE11: -->
+<script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+<script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
+
+    </body>
+</html>

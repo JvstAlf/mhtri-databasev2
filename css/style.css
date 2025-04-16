@@ -1,0 +1,804 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'MonsterHunterTri';
+    src: url('../font/Monsterhuntertri-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'MHtriBase';
+    src: url('../font/MonsterhuntertriBase-Regular.ttf');
+}
+
+html {
+    scroll-behavior: smooth !important; 
+}
+
+body {
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: darken;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100dvh;
+}
+
+.main {
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 50dvh;
+    justify-content: center;
+    align-items: center;
+    padding: 8rem 5rem 0 8rem;
+}
+
+.logo {
+    height: 400px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+}
+
+.title {
+    font-size: 8rem;
+    color: white;
+    display: inline-flex;
+    height: 400px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MonsterHunterTri';
+    text-shadow: 0 0 2rem rgba(218, 165, 32, 0.8);
+    word-spacing: 5rem;
+    -webkit-text-stroke: 2px rgb(0, 0, 0);
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.title img {
+    height: 8rem;
+    padding: 1rem;
+}
+
+.navbar {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    height: 50dvh;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar ul {
+    display: inline-flex;
+    color: white;
+    width: 100%;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.navbar li {
+    background-image: url('../images/hud/border1.png');
+    width: 422px;
+    height: 80px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MonsterHunterTri';
+    font-size: 2rem;
+    box-shadow: 0 0.5rem 1rem black;
+    cursor: pointer;
+    word-wrap: break-word;
+    text-shadow: 0 0.1rem 0.1rem rgb(255, 72, 0);
+}
+
+.navbar li:hover {
+    scale: 1.05;
+    background-image: url('../images/hud/border1active.png');
+}
+
+.navbar li a, .navbar a:visited, .navbar a:link {
+    text-decoration: none;
+    color: white;
+}
+
+.body {
+    height: 100dvh;
+    width: 100%;
+    color: white;
+    padding: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body1 {
+    padding: 2rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description {
+    width: 100%;
+    background-size: cover;
+    border: 5rem solid transparent;
+    background-image: url('../images/hud/paper.png');
+    background-size: cover;
+    border-image: url('../images/hud/paperborder.png') 50 round;
+    background-origin: border-box;
+    background-clip: padding-box;
+}
+
+.description p {
+    font-size: 1.25rem;
+    word-spacing: 10px;
+    line-height: 1.6rem;
+    text-justify: newspaper;
+    user-select: text;
+    font-family: 'MHtriBase';
+    text-shadow: 0 0.1rem 0.1rem black;
+}
+
+.arrow-down a {
+    position: absolute;
+    color: white;
+    font-size: 5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    -webkit-text-stroke: 5px black;
+    color: rgb(26, 53, 41);
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    text-shadow: 0 1rem 1rem black;
+}
+
+.arrow-down a:hover {
+    -webkit-text-stroke: 5px rgb(175, 117, 10);
+    scale: 1.1
+}
+
+.large-monsters {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    border: 2rem solid transparent;
+    background-image: url('../images/hud/paper.png');
+    border-image: url('../images/hud/paperborder.png') 50 round;
+    background-origin: border-box;
+    background-clip: padding-box;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.weapons-page {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-size: cover;
+    flex-direction: column;
+    border: 3rem solid transparent;
+    background-image: url('../images/hud/paper.png');
+    border-image: url('../images/hud/paperborder.png') 50 round;
+    background-origin: border-box;
+    background-clip: padding-box;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.large-monster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.large-monsters a, .large-monsters a:link, .large-monsters a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+.large-monster p {
+    color: white;
+    font-family: 'MHtriBase';
+    font-size: 2rem;
+    text-shadow: 0 0.25rem 0.25rem black;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.monster-icon {
+    background-image: url('../images/hud/monster-icon-bg.png');
+    width: 15rem;
+    height: 12rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-origin: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.monster-icon:hover {
+    background-image: url('../images/hud/monster-icon-bgactive.png');
+}
+
+.monster-icon img {
+    height: 90%;
+    object-fit: cover;
+}
+
+.top-navbar {
+    display: inline-flex;
+    position: fixed;
+    width: 90%;
+    height: 4rem;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0 0.75rem;
+    list-style: none;
+    border-radius: 20px;
+    border: 1px solid grey;
+    z-index: 999;
+}
+
+.top-navbar a {
+    text-decoration: none;
+    background-image: url('../images/hud/border2.png');
+    background-size: cover;
+    width: 278px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-navbar li {
+    color: white;
+    font-size: 100%;
+    font-family: 'MHtriBase';
+    padding-top: 5px;
+}
+
+.monster-name {
+    padding: 3rem;
+    font-size: 7rem;
+    color: white;
+    font-family: 'MonsterHunterTri';
+    margin-top: 5rem;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 0 0.5rem 0.5rem black;
+}
+
+.monster-info {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.monster-desc {
+    padding: 1rem;
+    width: 75%;
+    background-image: url('../images/hud/paper2.png');
+    background-position: center;
+    background-size: cover;
+    border-left: 3rem solid transparent;
+    border-image: url('../images/hud/paperborder-left.png') 50 round;
+    background-origin: border-box;
+    background-clip: padding-box;
+    box-shadow: 0 0.5rem 1.5rem black;
+    display: flex;
+    flex-direction: column;
+}
+
+.monster-desc1, .quest-name {
+    color: white;
+    font-family: 'MHTriBase';
+    font-size: 1.25rem;
+    word-spacing: 10px;
+    text-shadow: 0 0.1rem 0.1rem black;
+    padding: 0.5rem;
+    user-select: text;
+    -moz-user-select: text;
+}
+
+.quest-name {
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+.quest-name a, .quest-name a:visited, .quest-name a:link {
+    text-decoration: none;
+}
+
+.quest-name a:hover {
+    opacity: 0.8;
+}
+
+.monster-desc2 {
+    color: rgb(92, 92, 92);
+    font-family: serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 1.25rem;
+    word-spacing: 10px;
+    padding: 0.5rem;
+    user-select: text;
+    -moz-user-select: text;
+}
+
+model-viewer {
+    width:80%;
+    height: 25rem;
+    background-color:rgba(0, 0, 0, 0.5);
+    margin: 0 auto;
+    border-radius: 3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    z-index: 1;
+}
+
+.note {
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.damage-chart {
+    width: 100%;
+    object-fit: scale-down;
+    padding: 0 8rem;
+}
+
+.monster-desc3 p {
+    padding: 2rem;
+    font-size: 2rem;
+    font-family: 'MHTriBase';
+    color: white;
+    text-shadow: 0 0.2rem 0.2rem black;
+}
+
+.tree-title p {
+    padding: 3rem;
+    font-size: 3rem;
+    font-family: 'MHTriBase';
+    color: white;
+    text-shadow: 0 0.2rem 0.2rem black;
+}
+
+.monster-desc3 {
+    background-image: url('../images/hud/border2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+}
+
+.tree-title {
+    background-image: url('../images/hud/border2.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 0 4rem;
+}
+
+.monster-chart {
+    padding: 0;
+    width: 25%;
+    border: 3rem solid transparent;
+    background-image: url('../images/hud/paper.png');
+    border-image: url('../images/hud/paperborder.png') 50 round;
+    background-size: contain;
+    background-clip: padding-box;
+    align-self: flex-start;
+}
+
+.monster-image {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.monster-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.monster-details > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0.5rem 0;
+    border: 1rem solid transparent;
+    background-image: url('../images/hud/border3.png');
+    background-size: cover;
+    background-position: center;
+    border-image: url('../images/hud/border3.1.png') 60 round;
+    background-clip: padding-box;
+    background-origin: border-box;
+    padding: 1rem;
+}
+
+.monster-details > div p:first-child {
+    color: white;
+    font-family: 'MHtriBase';
+    width: 50%;
+    font-size: 1rem;
+    text-shadow: 0 0.1rem 0.1rem black;
+}
+
+.monster-details > div p:last-child {
+    color: rgb(207, 207, 207);
+    font-family: 'MHtriBase';
+    width: 50%;
+    font-size: 1rem;
+    text-align: end;
+    text-shadow: 0 0.1rem 0.1rem black;
+    justify-content: end;
+    width: 100%;
+}
+
+.monster-details p {
+    display: inline-flex;
+    align-items: center;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+.monster-details section {
+    display: flex;
+}
+
+.monster-details img {
+    width: 20px;
+    justify-content: end;
+    margin: 0 0.5rem;
+}
+
+.monster-details section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: rgb(207, 207, 207);
+}
+
+.monster-details section p {
+    font-family: 'MHTriBase';
+    text-shadow: 0 0.1rem 0.1rem black;
+    text-align: end;
+    justify-content: end;
+    width: 100%;
+}
+
+.monster-details section p:first-child {
+    color: rgb(207, 207, 207);
+    text-align: end;
+    justify-content: end;
+    width: 100%;
+}
+
+.monster-details section div {
+    display: flex;
+    align-items: center;
+}
+
+iframe {
+    aspect-ratio: 16/9 !important;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    width: 75%;
+}
+
+.monster-details > div:last-child img {
+    width: 50px;
+}
+
+.elements-efficiency {
+    border: 1px solid black;
+    padding: 1rem;
+    background-image: url('../images/hud/paper.png');
+    border: 2em solid transparent;
+    border-image: url('../images/hud/paperborder.png') 50 round;
+    background-size: cover;
+    background-clip: padding-box;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    border-spacing: 0;
+}
+
+.elements-efficiency th {
+    color: white;
+    padding: 0.5rem;
+    font-family: 'MHTriBase';
+    font-size: 1.25rem;
+    background-color: rgba(255, 60, 0, 0.15);
+}
+
+.elements-efficiency td {
+    text-align: center;
+    font-family: 'MHTriBase';
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.elements-efficiency tr:not(:first-child) th, .elements-efficiency tr:not(:first-child) td {
+    border-top: 2px solid rgb(190, 172, 138);
+}
+
+.element-icon {
+    width: 32px;
+}
+
+.carves {
+    display: flex;
+    width: 100%;
+    padding: 3rem;
+    flex-direction: column;
+}
+
+.carves > p {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 2rem;
+    font-family: 'MonsterHunterTri';
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0.25rem 0.1rem black;
+}
+
+.carves > p:last-of-type {
+    padding-top: 2rem;
+}
+
+.carves table {
+    width: 100%;
+    padding: 1rem;
+    background-image: url('../images/hud/paper.png');
+    border: 3rem solid transparent;
+    margin: 0 auto;
+    border-image: url('../images/hud/paperborder.png') 60 round;
+    background-size: cover;
+    background-clip: padding-box;
+    border-spacing: 0;
+    background-origin: border-box;
+    font-family: 'MHTriBase';
+}
+
+.carves th {
+    padding: 1rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.carves td {
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.wounds {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 !important;
+}
+
+.wounds div {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.wounds div:last-child p {
+    padding: 0.5rem;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wounds div:last-child p:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.wounds div:last-child p:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.weapons-page > p {
+    font-family: 'MHTriBase';
+    font-size: 1rem;
+    word-spacing: 12px;
+    text-align: left;
+    width: 100%;
+}
+
+b {
+    font-size: 115%;
+}
+
+b > a {
+    text-underline-offset: 2px;
+}
+
+b > a:hover {
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.tree {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'MHTriBase';
+    font-size: 1.25rem;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.path-name > span {
+    background-image: url('../images/hud/border3.png');
+    background-position: center;
+    background-size: cover;
+    background-clip: padding-box;
+    background-origin: border-box;
+    border-image: url('../images/hud/border3.1.png') 50 round;
+    border: 1px solid transparent;
+    width: 400px;
+    height: 72px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0.25rem 0.15rem black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.path-name span span {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: black;
+    text-shadow: none;
+    margin: 0.2rem;
+}
+
+.tree th {
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 0.5rem;
+}
+
+.path-name {
+    font-size: 2rem;
+    width: 100%;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree td {
+    padding: 0.5rem;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.tree tr td:first-child {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.element {
+    height: 20px;
+    vertical-align: middle;
+    margin: 0 0.25rem;
+}
+
+.sharpness {
+    height: 2rem;
+}
+
+.tree a:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.weapon-name {
+    font-family: 'MonsterHunterTri';
+    color: white;
+    font-size: 5rem;
+    margin-top: 10rem;
+    word-spacing: 2rem;
+    text-shadow: 0 0.2rem 0.25rem black;
+    padding: 1rem;
+}
+
+.monster-part {
+    display: inline-flex;
+    width: 25px;
+    height: 25px;
+    padding: 1px;
+    vertical-align: middle;
+}
+
+.weapon-rarity {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.hamburger-menu {
+    width: 100%;
+    color: white;
+    display: none;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.hamburger-menu i {
+    font-size: 3rem;
+}
+
+#menu {
+    display: none;
+    flex-direction: column;
+}
+
+#menu a {
+    font-family: 'MHTriBase';
+    list-style-type: none;
+    margin: 0.5rem 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    background-color: rgba(158, 109, 54, 0.5);
+}
